@@ -52,7 +52,7 @@ Run the clearing script
 
 The cleaned file will be saved in: messy-and-clean_data/cleaned/cleaned_employee_dataset.csv
 
-——-
+```
 
 Cleaning Steps Performed
 •  Standardized column names

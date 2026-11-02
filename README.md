@@ -26,18 +26,8 @@ The original dataset contained typical messy data problems such as inconsistent 
 ---
 
 ## Project Structure
-data/
-├── data-scripts/
-|     └── Employee_script.py
-├── messy-and-clean_data/
-│    |
-|    ├── raw/ 
-|    |   └─ Messy_Employee_dataset.csv
-|    └── cleaned/
-|        └─ Cleaned_Employee_dataset.csv
-├── venv/ 
-├── .gitignore
-└── requirements.txt
+
+![Project Structure](project-structure.JPG)
 
 
 ---
@@ -55,9 +45,28 @@ venv\Scripts\activate
 source venv/bin/activate
 
 Install Python dependencies
-pip install -r requirements.txt
+• pip install -r requirements.txt
 
 Run the clearing script
-python Employee_script.py
+• python Employee_script.py
 
 The cleaned file will be saved in: messy-and-clean_data/cleaned/cleaned_employee_dataset.csv
+
+——-
+
+Cleaning Steps Performed
+•  Standardized column names
+•  Removed duplicate rows
+•  Converted Join_Date to proper datetime format
+•  Converted Salary and Age to numeric values
+•  Handled missing values (filled numeric columns with median)
+•  Split Department_Region into separate Department and Region columns
+•  Cleaned and standardized text values
+
+Tools Used
+•  Python
+•  Pandas
+•  NumPy
+
+## Author
+Michael Ifeanyi Ibeh
